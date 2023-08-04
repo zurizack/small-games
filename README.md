@@ -96,3 +96,4 @@ This command will build the app and push it to the `gh-pages` branch, making it 
 Please note that the `gh-pages` branch should only be used for deployment purposes and should not be modified directly.
 
 Enjoy playing Tic-Tac-Toe!
+

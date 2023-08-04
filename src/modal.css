@@ -1,0 +1,57 @@
+.modal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 30%;
+    left: 39.5%;
+    transform: translate(-15%, -15%); /* Move modal to the center */
+    width: 30%;
+    height: 30%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    max-width: 80%; /* You can adjust the width as needed */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+  }
+
+.button {
+    margin-top: 10px;
+    /* Add positioning rules for the button */
+
+
+  }
+
+.modal-body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.modal-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  

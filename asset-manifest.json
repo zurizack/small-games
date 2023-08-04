@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/small-games/static/css/main.aceb39b2.css",
-    "main.js": "/small-games/static/js/main.f50bc838.js",
+    "main.css": "/small-games/static/css/main.ccfe0030.css",
+    "main.js": "/small-games/static/js/main.f3b49290.js",
     "index.html": "/small-games/index.html",
-    "main.aceb39b2.css.map": "/small-games/static/css/main.aceb39b2.css.map",
-    "main.f50bc838.js.map": "/small-games/static/js/main.f50bc838.js.map"
+    "main.ccfe0030.css.map": "/small-games/static/css/main.ccfe0030.css.map",
+    "main.f3b49290.js.map": "/small-games/static/js/main.f3b49290.js.map"
   },
   "entrypoints": [
-    "static/css/main.aceb39b2.css",
-    "static/js/main.f50bc838.js"
+    "static/css/main.ccfe0030.css",
+    "static/js/main.f3b49290.js"
   ]
 }

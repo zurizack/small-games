@@ -51,10 +51,10 @@ const Tiktakto = () => {
 
         if (winner) {
             if (winner === 'T') {
-                setModalMessage("מיטמוט יאפס");
+                setModalMessage("אין הם בקטע זה לא יאומן");
                 setModalImage('WhatsApp Image 2023-08-04 at 21.32.55.jpg');
             } else {
-                setModalMessage(`מיטמוט יאפס`);
+                setModalMessage(`אין הם בקטע זה לא יאומן`);
                 
                 if (winner === 'X') {
                     setPlayerXWins(playerXWins + 1);

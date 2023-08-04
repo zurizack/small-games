@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import "./tiktakto.css"
+import Modal from './Modal';
+
 
 const Tiktakto = () => {
 
@@ -9,6 +11,9 @@ const Tiktakto = () => {
     const [gameEnded, setGameEnded] = useState(false);
     const [playerXWins, setPlayerXWins] = useState(0);
     const [playerOWins, setPlayerOWins] = useState(0);
+    const [modalImage, setModalImage] = useState('');
+    const [showModal, setShowModal] = useState(false);
+    const [modalMessage, setModalMessage] = useState('');
 
     useEffect(() => {
         // Initialize the game: set the board, player X starts, and game is not ended
@@ -46,15 +51,21 @@ const Tiktakto = () => {
 
         if (winner) {
             if (winner === 'T') {
-                alert('It\'s a tie!');
+                setModalMessage("מיטמוט יאפס");
+                setModalImage('WhatsApp Image 2023-08-04 at 21.32.55.jpg');
             } else {
-                alert(`${winner} wins!`);
+                setModalMessage(`מיטמוט יאפס`);
+                
                 if (winner === 'X') {
                     setPlayerXWins(playerXWins + 1);
+                    setModalImage('WhatsApp Image 2023-08-04 at 21.32.55.jpg');
                 } else {
                     setPlayerOWins(playerOWins + 1);
+                    setModalImage('WhatsApp Image 2023-08-04 at 21.32.55.jpg');
                 }
             }
+
+            setShowModal(true);
 
             // Update game board and switch the current player immediately
             setGameBoard(newGameBoard);
@@ -66,6 +77,11 @@ const Tiktakto = () => {
 
         setGameBoard(newGameBoard);
         setCurrentPlayer(currentPlayer === 'X' ? 'O' : 'X');
+    };
+
+    const handleCloseModal = () => {
+        setShowModal(false);
+        resetGame();
     };
 
 
@@ -100,6 +116,8 @@ const Tiktakto = () => {
                     Reset Game
                 </button>
             )}
+
+            {showModal && <Modal message={modalMessage} image={modalImage} onClose={handleCloseModal} />}
         </div>
     );
 };
